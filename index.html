@@ -1,93 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugene | Data Analyst Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        h1 {
-            color: #0d6efd;
-        }
-
-        section {
-            margin-bottom: 60px;
-        }
-
-        .project {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-        }
-
-        a {
-            color: #0d6efd;
-            text-decoration: none;
-        }
-    </style>
-</head>
-
-<body>
-
-<section>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Eugene Dzramado | Data Analyst</title>
+<meta name="description" content="Data analyst portfolio: SQL, MySQL, Excel and Power BI projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="index.html">Eugene Dzramado</a><ul><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#contact">Contact</a></li><li><a class="btn btn-primary btn-small" href="https://github.com/CodeLikeEugene">GitHub</a></li></ul></div></header>
+<main>
+<div class="hero"><div class="wrap">
+  <div>
     <h1>Eugene Dzramado</h1>
+    <p class="role">Data Analyst</p>
+    <p>I turn raw data into clear answers using SQL, Excel and Power BI. Browse my projects below, each with its code, charts and findings.</p>
+    <div class="actions"><a class="btn btn-primary" href="#projects-section">See my projects</a><a class="btn btn-outline" href="#contact">Get in touch</a></div>
+  </div>
+  <div class="boxscore"><h2>At a glance</h2><table><tbody>
+    <tr><th scope="row">Tools</th><td>SQL, MySQL, Excel, Power BI</td></tr>
+    <tr><th scope="row">Projects</th><td id="count">0</td></tr>
+    <tr><th scope="row">Latest project</th><td id="latest"></td></tr>
+  </tbody></table></div>
+</div></div>
 
-    <h2>Aspiring Data Analyst</h2>
+<section id="projects-section" class="band"><div class="wrap">
+  <h2 class="title">Projects</h2>
+  <div class="projects" id="projects"></div>
+</div></section>
 
-    <p>
-        I enjoy transforming data into meaningful insights through SQL,
-        visualization, and business analysis.
-    </p>
-           
+<section id="skills"><div class="wrap">
+  <h2 class="title">Skills</h2>
+  <div class="skills">
+    <div><h3>Querying</h3><ul><li>SQL and MySQL</li><li>Window functions (ROW_NUMBER, RANK, LAG)</li><li>Common table expressions</li><li>Subqueries and aggregations</li></ul></div>
+    <div><h3>Analysis</h3><ul><li>Data cleaning</li><li>Trend analysis</li><li>Building and testing metrics</li><li>Explaining findings in plain language</li></ul></div>
+    <div><h3>Tools</h3><ul><li>Excel</li><li>Power BI</li><li>GitHub</li><li>Data visualization</li></ul></div>
+  </div>
+</div></section>
 
-<section>
-    <h2>Skills</h2>
-
-    <p>
-        SQL • MySQL • Excel • Power BI • Data Analysis • Data Visualization
-    </p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-
-        <h3>🏀 NBA Player Performance Analysis</h3>
-
-        <p>
-            Analyzed NBA player statistics from 1996–2023 to identify
-            performance trends, franchise excellence, player development,
-            and MVP value through SQL.
-        </p>
-
-        <p>
-            <a href="https://github.com/CodeLikeEugene/NBA-Player-Performance-Analysis">
-                View Project
-            </a>
-        </p>
-
-    </div>
-</section>
-
-<section>
-    <h2>Contact</h2>
-
-    <p>
-        LinkedIn | GitHub
-    </p>
-</section>
-
-</body>
-</html>
+<section id="contact" class="band contact"><div class="wrap">
+  <h2 class="title">Contact</h2>
+  <p>Want to talk about a project or a role? Message me on LinkedIn or look through my work on GitHub.</p>
+  <div class="actions">
+    <!-- TODO: replace YOUR-LINKEDIN-USERNAME with your real LinkedIn username -->
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME">Message on LinkedIn</a>
+    <a class="btn btn-outline" href="https://github.com/CodeLikeEugene">See my GitHub</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">Eugene Dzramado, Data Analyst</div></footer><script src="projects.js"></script><script src="site.js"></script>
+</body></html>
